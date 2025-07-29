@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect, useRef, type CSSProperties } from "react";
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+// URL fixa do backend em produção
+const BASE_URL = "https://backend-produção-e77b.up.railway.app";
 
 export default function Home() {
   const [baseFood, setBaseFood] = useState("");
